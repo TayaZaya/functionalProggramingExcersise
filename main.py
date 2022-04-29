@@ -35,3 +35,8 @@ def accumulator(acc, item):
     return acc + item
 
 print(reduce(accumulator, (my_numbers + scores)))
+
+print(list(filter(lambda item: item % 2 != 0, my_numbers)))
+
+from functools import reduce
+print(reduce(lambda acc, item: acc+item, my_numbers))
